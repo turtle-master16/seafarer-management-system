@@ -1,0 +1,5 @@
+/api/crew/
+/api/ship/
+/api/shipcrew/
+/api/crew/{id}
+/api/ship/{id}
