@@ -4,7 +4,7 @@ const mysql = require('mysql2')
 const dbconnect = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    database: 'seaferrers',
+    database: 'seaferrer',
 })
 
 dbconnect.connect((err)=>{

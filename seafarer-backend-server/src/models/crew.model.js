@@ -1,12 +1,12 @@
 var dbconnect = require('../config/database.config')
 
-var shipData = (shipData)=>{
-    this.shipData = shipData
+var crewData = (crewData)=>{
+    this.crewData = crewData
 }
 
 //Get all ship data
-shipData.getAllShipData = (result)=>{
-    dbconnect.query('SELECT * FROM Ships', (err,res)=>{
+crewData.getAllCrewData = (result)=>{
+    dbconnect.query('SELECT * FROM shipcrews', (err,res)=>{
         if(err){
             console.log('Error connecting to database')
             result(null,err)
@@ -17,4 +17,4 @@ shipData.getAllShipData = (result)=>{
     })
 }
 
-module.exports = shipData
+module.exports = crewData
